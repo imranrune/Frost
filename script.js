@@ -22,6 +22,7 @@
             const lon = pos.coords.longitude;
 
             // url is a const which says here is my lat,log give me address
+            // this is open source api and may not show the most accurate locations
             const url = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`;
 
             const res = await fetch(url); // initinalizes the url
