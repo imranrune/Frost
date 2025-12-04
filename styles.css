@@ -11,7 +11,7 @@
 
 .header h1 {
     color: rgba(252, 104, 5, 1);
-    font-size: larger;
+    font-size: 25;
 }
 
 /* body refers to the body of html, and header is header, it is removing margin white,
@@ -19,4 +19,33 @@ and padding */
 body, header {
     margin: 0; 
     padding: 0;
+    background-color: black;
 }
+
+.location_bar {
+    display: inline-flex; /* the bar only takes length of location */
+    align-items: center; /* it centers the items vertically or horizontall */
+    background-color: rgba(252, 104, 5, 1);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke-color:rgba(0,0,0);
+    -webkit-text-stroke-width: 0.3px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.HOT_TEXT {
+    font-size: 48px;
+    font-family: 'Bebas Neue',sans-serif;
+    color: rgba(139, 40, 40, 1);
+    padding-left: 60px;
+    padding-top: 15px;
+}
+
+.HOT_TEXT h2 {
+    margin-top: 0;
+}
+
