@@ -23,6 +23,7 @@ body, header {
 }
 
 .location_bar {
+    margin-left: 27px;
     display: inline-flex; /* the bar only takes length of location */
     align-items: center; /* it centers the items vertically or horizontall */
     background-color: rgba(252, 104, 5, 1);
@@ -38,14 +39,65 @@ body, header {
 }
 
 .HOT_TEXT {
-    font-size: 48px;
+    font-size: 69px;
     font-family: 'Bebas Neue',sans-serif;
     color: rgba(139, 40, 40, 1);
-    padding-left: 60px;
-    padding-top: 15px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .HOT_TEXT h2 {
-    margin-top: 0;
+    display: relative; /* now postion is relative to it's own position, Margins allow adjustments*/
+    margin-left: 228px;
+    margin-bottom: 19px;
+    margin-top: 0px;
 }
 
+.carousel {
+    padding-top: 0px;
+    position: relative;
+    width: 680px;
+    height: 440px;
+    margin-left: 257px;
+    overflow: visible; /* anything that gets clipped out gets hidden (update ! this is turned to visible for nav)*/
+    background: black;
+}
+
+.slides {
+    align-items: center;
+    display: flex; /* turns element into flex conatiner so elements allign in a row by default */
+    gap: 22px; /* addes gap */
+    transition: transform 0.4 ease; /* transition = smooth animation between one state and another. */
+}
+
+.slideLR{
+    flex: 0 0 calc(100% /3); /* makes room for 3 slides issue here !!! */
+    width: 250px;
+    height: 400px;
+}
+
+.main_slide {
+    width: 500px;
+    height: 650px;
+}
+
+.nav { /* affecting nav right and left */
+    position: absolute; /* is free not attached to parent carosule */
+    top: 68%; /* top controls how far down .nav button sits on the carsoule */
+    width: 33px;
+    height: 33px;
+    border: none;
+    background: #000000;
+    color: gray;
+    font-size: 33px;
+    cursor: pointer;
+}
+
+.left {
+    left: -80px;
+}
+
+.right {
+    right: -390px;
+}

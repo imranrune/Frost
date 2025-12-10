@@ -1,0 +1,15 @@
+1. Rule no 1 of projects, no copy-pasting code
+
+doesn't work on andorid because 
+Short answer: your page fails on phone because geolocation (and many browser APIs) require a secure context (HTTPS or localhost) — opening index.html 
+directly (file://) or via plain http:// on a remote device will block it.
+
+position: relative;
+→ The element stays in its normal place, but it becomes a parent positioning container for absolutely-positioned children.
+
+Why you need it in your slider:
+Your arrow buttons use position: absolute; → they must anchor to something.
+position: relative; on .slider makes the arrow buttons stick inside the slider instead of the whole page.
+
+Absolute = free-floating.
+Relative parent = anchor
